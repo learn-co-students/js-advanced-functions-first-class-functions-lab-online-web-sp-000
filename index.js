@@ -1,9 +1,6 @@
-const returnFirstTwoDrivers = (function(drivers) {
-  const array = [];
-  array.push(drivers[0]);
-  array.push(drivers[1]);
-  return array;
-})
+const returnFirstTwoDrivers = function(drivers) {
+  return (drivers.slice(0, 2));
+};
 
 const returnLastTwoDrivers = (function(drivers) {
   const array = [];
