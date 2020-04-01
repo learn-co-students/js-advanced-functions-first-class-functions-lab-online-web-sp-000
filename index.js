@@ -3,37 +3,22 @@ const returnFirstTwoDrivers = function(drivers) {
 };
 
 const returnLastTwoDrivers = (function(drivers) {
-  const array = [];
-  array.push(drivers[drivers.length - 2])
-  array.push(drivers[drivers.length - 1])
-  return array;
-})
+  return (drivers.slice(-2));
+});
 
-const selectingDrivers = []
-  selectingDrivers.push(returnFirstTwoDrivers);
-  selectingDrivers.push(returnLastTwoDrivers);
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-function createFareMultiplier(multiplier) {
-  let fareFunction = function(fare) {
-    return( fare * multiplier)
-  }
-  return fareFunction
-}
+const createFareMultiplier = function(multiplier) {
+  return function(fare) {
+    return( fare * multiplier);
+  };
+};
 
-function fareDoubler(fare) {
-  return(fare * 2)
-}
+const fareDoubler = createFareMultiplier(2)
 
-function fareTripler(fare) {
-  return fare + fareDoubler(fare)
-}
 
-function selectDifferentDrivers(arrayOfDrivers, fn) {
+const fareTripler = createFareMultiplier(3);
 
-  if(fn === returnFirstTwoDrivers) {
-    return returnFirstTwoDrivers(arrayOfDrivers)
-  } else {
-    return returnLastTwoDrivers(arrayOfDrivers)
-  }
-
-}
+function selectDifferentDrivers(arrayOfDrivers, whichDrivers) {
+  return whichDrivers(arrayOfDrivers);
+};
