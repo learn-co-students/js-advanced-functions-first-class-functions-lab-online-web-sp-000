@@ -16,4 +16,4 @@ const returnLastTwoDrivers = function( arrayDrivers){
    
    }
 
-selectingDrivers =  [returnFirstTwoDrivers,returnLastTwoDrivers]
+const selectingDrivers =  [returnFirstTwoDrivers,returnLastTwoDrivers]
