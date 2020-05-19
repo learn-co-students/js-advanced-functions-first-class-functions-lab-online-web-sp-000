@@ -35,35 +35,6 @@ const returnLastTwoDrivers = function (drivers) {
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 
-// const createFareMultiplier = function (multipleAmount) {
-  const createFareMultiplier = function (multipleAmount) {
-  return function (retailValue) {
-    return multipleAmount * retailValue;
-  };
-}
-const fareDoubler = function(fare){
-  return fare * 2
-}
-const fareTripler = (fare)=> {return fare * 3}
-
-
-function selectDifferentDrivers(arrayOfDrivers, givenFunction){
-    return givenFunction(arrayOfDrivers)
-  };
-
-// function selectDifferentDrivers(arrayOfDrivers, funct = returnFirstTwoDrivers){
-//   if (funct == returnFirstTwoDrivers) {
-//     return returnFirstTwoDrivers(arrayOfDrivers)
-//   } else if (funct == returnLastTwoDrivers) {
-//     return returnLastTwoDrivers(arrayOfDrivers)
-//   }  else {
-//     console.log("sorry bub, that's not an option")}
-// }
-
-// console.log(selectDifferentDrivers(['maggie', 'bart', 'lisa', 'marge', 'homer'],returnFirstTwoDrivers))
-// console.log(selectDifferentDrivers(['maggie', 'bart', 'lisa', 'marge', 'homer'],returnLastTwoDrivers))
-
-// let drivers = ['maggie', 'bart', 'lisa', 'marge', 'homer']
-// console.log(selectDifferentDrivers(drivers, returnLastTwoDrivers))
-// console.log(selectDifferentDrivers(drivers))
-// console.log(selectDifferentDrivers(drivers, returnLastTwoDrivers))
+// createFareMultiplier()
+// fareDoubler
+// fareTripler
