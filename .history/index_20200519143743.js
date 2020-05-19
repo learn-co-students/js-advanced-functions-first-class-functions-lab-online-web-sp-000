@@ -46,24 +46,15 @@ const fareDoubler = function(fare){
 }
 const fareTripler = (fare)=> {return fare * 3}
 
-
-function selectDifferentDrivers(arrayOfDrivers, givenFunction){
-    return givenFunction(arrayOfDrivers)
-  };
-
-// function selectDifferentDrivers(arrayOfDrivers, funct = returnFirstTwoDrivers){
-//   if (funct == returnFirstTwoDrivers) {
-//     return returnFirstTwoDrivers(arrayOfDrivers)
-//   } else if (funct == returnLastTwoDrivers) {
-//     return returnLastTwoDrivers(arrayOfDrivers)
-//   }  else {
-//     console.log("sorry bub, that's not an option")}
-// }
+function selectDifferentDrivers(arrayOfDrivers, funct){
+  if (returnFirstTwoDrivers) {
+    return returnFirstTwoDrivers(arrayOfDrivers)
+  } else if (returnLastTwoDrivers) {
+    return returnLastTwoDrivers(arrayOfDrivers)
+  }  else {
+    console.log("sorry bub, that's not an option")}
+}
 
 // console.log(selectDifferentDrivers(['maggie', 'bart', 'lisa', 'marge', 'homer'],returnFirstTwoDrivers))
 // console.log(selectDifferentDrivers(['maggie', 'bart', 'lisa', 'marge', 'homer'],returnLastTwoDrivers))
-
-// let drivers = ['maggie', 'bart', 'lisa', 'marge', 'homer']
-// console.log(selectDifferentDrivers(drivers, returnLastTwoDrivers))
-// console.log(selectDifferentDrivers(drivers))
-// console.log(selectDifferentDrivers(drivers, returnLastTwoDrivers))
+console.log(selectDifferentDrivers(['maggie', 'bart', 'lisa', 'marge', 'homer'], funct = returnLastTwoDrivers))
