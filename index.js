@@ -6,7 +6,7 @@ const returnLastTwoDrivers = function(arr = [1,2,3,4,5]){
     return [arr[arr.length-2],arr[arr.length-1]]
 }
 
-const selectingDrivers = [returnFirstTwoDrivers(), returnLastTwoDrivers()]
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 console.log(selectingDrivers)
 
 function createFareMultiplier(int){
