@@ -72,7 +72,7 @@
 //       expect(selectDifferentDrivers(drivers, returnFirstTwoDrivers)).to.eql(['Sally', 'Bob']);
 //     });
 
-//     it('returns the last two drivers when passed returnLastTwoDrivers() as the second argument', function () {
+//     it('returns the last two drivers when passed returnLdastTwoDrivers() as the second argument', function () {
 //       expect(selectDifferentDrivers(drivers, returnLastTwoDrivers)).to.eql(['Freddy', 'Claudia']);
 //     });
 //   });
