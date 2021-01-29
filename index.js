@@ -1,12 +1,12 @@
 // Code your solution in this file!
 
 const returnFirstTwoDrivers = function (drivers) {
-  firstTwoDrivers = drivers.slice(0, 2)
+  const firstTwoDrivers = drivers.slice(0, 2)
   return firstTwoDrivers
 }
 
 const returnLastTwoDrivers = function (drivers) {
-  lastTwoDrivers = drivers.slice(-2)
+  const lastTwoDrivers = drivers.slice(-2)
   return lastTwoDrivers
 }
 
@@ -22,6 +22,6 @@ const fareDoubler = createFareMultiplier(2)
 
 const fareTripler = createFareMultiplier(3)
 
-const selectDifferentDrivers = function(drivers)
-
-// HOW CAN BOTH BE THE SECOND ARGUMENT?????
+const selectDifferentDrivers = function (drivers, secondArgument) {
+  return secondArgument(drivers) 
+}
